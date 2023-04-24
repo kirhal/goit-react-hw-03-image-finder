@@ -23,7 +23,7 @@ export default class ImageGalleryItem extends Component {
         {showModal && <Modal image={largeImage} onClose={this.toggleModal} />}
         <img
           src={smallImage}
-          alt="Image"
+          alt=""
           className={css['ImageGalleryItem-image']}
           onClick={this.toggleModal}
         />

@@ -27,7 +27,7 @@ export class App extends Component {
   };
 
   async componentDidUpdate() {
-    const { searchValue, images, isLoading, error } = this.state;
+    const { searchValue, images, error } = this.state;
     if (images.length === 0 && error === null) {
       try {
         await fetchImages(searchValue).then(res => {
@@ -79,7 +79,7 @@ export class App extends Component {
   };
 
   render() {
-    const { images, isLoading, error, disabled } = this.state;
+    const { images, isLoading, error} = this.state;
     return (
       <div className={css.App}>
         <Searchbar onSubmit={this.onSubmit} />
