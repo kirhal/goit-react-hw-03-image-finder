@@ -5,9 +5,8 @@ export default function Searchbar({ onSubmit }) {
     <header className={css.Searchbar}>
       <form className={css.SearchForm} onSubmit={onSubmit}>
         <button type="submit" className={css['SearchForm-button']}>
-          <span className={css['SearchForm-button-label']}>Search</span>
+          {/* <span className={css['SearchForm-button-label']}></span> */}
         </button>
-
         <input
           className={css['SearchForm-input']}
           type="text"

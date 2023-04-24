@@ -73,6 +73,8 @@
   outline: none;
   padding-left: 10px;
   padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .SearchForm-input::placeholder {
