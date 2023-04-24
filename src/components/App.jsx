@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { fetchImages, fetchMoreImages } from '../instruments/fetchAPI';
+import { fetchImages } from '../instruments/fetchAPI';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import css from './App.module.css';
 
@@ -58,6 +58,7 @@ export class App extends Component {
       this.setState({ isLoading: false });
     }
   };
+
   onSubmit = e => {
     const { searchValue } = this.state;
     e.preventDefault();
