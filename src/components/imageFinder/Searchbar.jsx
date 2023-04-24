@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './ImageFinder.module.css';
 
 export default function Searchbar({ onSubmit }) {
@@ -19,3 +20,5 @@ export default function Searchbar({ onSubmit }) {
     </header>
   );
 }
+
+Searchbar.propTypes = { onSubmit: PropTypes.func.isRequired };
