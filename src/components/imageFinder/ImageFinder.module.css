@@ -67,6 +67,7 @@
 .SearchForm-input {
   display: inline-block;
   width: 100%;
+  height: 35px;
   font: inherit;
   font-size: 20px;
   border: none;
